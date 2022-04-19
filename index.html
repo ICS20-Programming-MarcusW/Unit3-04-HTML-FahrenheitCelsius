@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+   <head>
+      <!-- Metadata -->
+      <meta charset="utf-8" />
+      <meta name="description" content="Assign-02" />
+      <meta name="keywords" content="immaculata, ics2o" />
+      <meta name="author" content="Marcus Wehbi" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Link for Favicon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png" />
+      <link rel="manifest" href="./fav_index/site.webmanifest" />
+      <!-- Material Design Lite -->
+      <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      <!-- Link for Stylesheet -->
+      <link rel="stylesheet" href="./css/style.css" />
+      <!-- Webpage title -->
+      <title>Calculating Temperature</title>
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+      <!-- Material Design icon font -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   </head>
+   <body>
+      <!-- Link to javascript file -->
+      <script src="./js/script.js"></script>
+      <h2>Converting from Degrees Celsius into Degrees Fahrenheit</h2>
+      <p>Please enter the temperature in <i>Degrees Celsius (°C)</i></p>
+      <!-- Form to retrieve information (temperature in degrees celsius) -->
+      <form action="javascript:convertCelToFahr()">
+         <label for="temp">Temperature in Celsius:</label>
+         <input type="number" step="any" id="cel" placeholder="0 °C" pattern="[0-9]+([\.,][0-9]+)?" name="tempCel">
+         <br><br>
+         <input type="submit" value="Convert">
+      </form>
+      <br>
+      <!-- Create a space where the user information will be displayed -->
+      <div id="display-fahrResults">
+         <div id="tempFahr" class="res"></div>
+      </div>
+      </center>
+      <h2>Converting from Degrees Fahrenheit into Degrees Celsius</h2>
+      <p>Please enter the temperature in <i>Degrees Fahrenheit (°F)</i></p>
+      <!-- Form to retrieve information (temperature in degrees fahrenheit) -->
+      <form action="javascript:convertFahrToCel()">
+         <label for="temp">Temperature in Fahrenheit:</label>
+         <input type="number" step="any" id="fahr" placeholder="0 °F" pattern="[0-9]+([\.,][0-9]+)?" name="tempFahr">
+         <br><br>
+         <input type="submit" value="Convert">
+      </form>
+      <br>
+      <!-- Create a space where the user information will be displayed -->
+      <div id="display-celResults">
+         <div id="tempCels" class="res"></div>
+      </div>
+      </center>
+      <hr>
+      <center><img src="./images/cf.jpeg"></center>
+      <hr>
+   </body>
+</html>
